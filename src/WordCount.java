@@ -17,7 +17,9 @@ public class WordCount {
         System.out.printf("В тексте %d слов%n", words.size());
         words.entrySet().stream()
                 .limit(10)
-                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed().thenComparing(Map.Entry.comparingByKey()))
+                .sorted(Map.Entry.<String, Integer>comparingByValue()
+                        .reversed()
+                        .thenComparing(Map.Entry.comparingByKey()))
                 .forEach(entry -> System.out.println(entry.getValue() + " - " + entry.getKey()));
     }
 }
