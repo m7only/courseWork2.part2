@@ -8,7 +8,7 @@ public class Main {
     public static String scan() {
         System.out.print("Введите строку: ");
         Scanner scanner = new Scanner(System.in);
-//        return "yourapp the quick brown fox jumps over the lazy dog";
+//        return "yourapp the quick brown fox jumps fox over the lazy dog";
         return scanner.nextLine();
     }
 }
